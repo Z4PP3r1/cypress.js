@@ -1,0 +1,7 @@
+{
+	"clogin":"CORRECT_LOGIN",
+	"cpassword":"CORRECT_PASSWORD",
+	"wlogin":"INCORRECT_LOGIN",
+	"wpassword":"INNCORRECT_PASSWORD",
+	"nonvalidlogin":"INVALID_LOGIN"
+}
