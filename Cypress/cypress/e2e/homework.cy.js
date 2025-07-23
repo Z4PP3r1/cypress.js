@@ -48,7 +48,7 @@ describe('Домашка', function () {
          cy.get('#mail').type('GerMan@Dolnikov.ru');
          cy.get('#pass').type(data.cpassword);
          cy.get('#loginButton').click();
-         cy.get('#messageHeader').contains('Авторизация прошла успешно', {timeout: 1});//решил не ждать повторной попытки от сайпрса
+         cy.get('#messageHeader').contains('Авторизация прошла успешно');
      })
  }) 
 
@@ -60,8 +60,8 @@ describe('Домашка', function () {
 
      it('Автотест покупка аватара покемонбатл', function() {
         cy.get ('#k_email');
-        cy.get('#k_email').type('CORRECT_LOGIN_POKEMON');
-        cy.get('#k_password').type('CORRECT_PASSWORD_POKEMON');
+        cy.get('#k_email').type('CORRECT_LOGIN');
+        cy.get('#k_password').type('CORRECT_PASSWORD');
         cy.get('.MuiButton-root').click();
         cy.wait(1000);
         cy.get('.header_card_trainer').click();
@@ -78,5 +78,6 @@ describe('Домашка', function () {
         cy.wait(1000);
         cy.get('.style_1_base_input').type('56456');
         cy.get('.style_1_base_button_payment_body > .style_1_base_button_payment').click();
+        cy.get('.payment_status_top_title').contains('Покупка прошла успешно').should('be.visible')
      })
     })
