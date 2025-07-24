@@ -59,9 +59,8 @@ describe('Домашка', function () {
         });
 
      it('Автотест покупка аватара покемонбатл', function() {
-        cy.get ('#k_email');
-        cy.get('#k_email').type('CORRECT_LOGIN');
-        cy.get('#k_password').type('CORRECT_PASSWORD');
+        cy.get('#k_email').type('USER_LOGIN');
+        cy.get('#k_password').type('USER_PASSWORD');
         cy.get('.MuiButton-root').click();
         cy.wait(1000);
         cy.get('.header_card_trainer').click();

@@ -1,7 +1,7 @@
 {
-	"clogin":"CORRECT_LOGIN",
-	"cpassword":"CORRECT_PASSWORD",
-	"wlogin":"INCORRECT_LOGIN",
-	"wpassword":"INNCORRECT_PASSWORD",
-	"nonvalidlogin":"INVALID_LOGIN"
+	"clogin":"german@dolnikov.ru",
+	"cpassword":"iLoveqastudio1",
+	"wlogin":"ge1rman@dolnikov.ru",
+	"wpassword":"iLoveqastudio12",
+	"nonvalidlogin":"germandolnikov.ru"
 }
